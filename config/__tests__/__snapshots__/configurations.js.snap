@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Babel Configuration Development Enviroment 1`] = `
+Object {
+  "plugins": Array [
+    "syntax-dynamic-import",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+  ],
+  "presets": Array [
+    "react",
+    Array [
+      "env",
+      Object {
+        "ignoreBrowserslistConfig": true,
+        "modules": false,
+        "targets": Object {
+          "browsers": Array [
+            "last 2 Chrome versions",
+            "last 2 Safari major versions",
+            "last 2 Edge versions",
+            "last 2 Firefox versions",
+          ],
+        },
+      },
+    ],
+  ],
+}
+`;
+
+exports[`Babel Configuration Production Enviroment 1`] = `
+Object {
+  "plugins": Array [
+    "syntax-dynamic-import",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+  ],
+  "presets": Array [
+    "react",
+    Array [
+      "env",
+      Object {
+        "ignoreBrowserslistConfig": true,
+        "modules": false,
+        "targets": Object {
+          "browsers": Array [
+            "> 1%",
+            "not IE < 11",
+          ],
+        },
+      },
+    ],
+  ],
+}
+`;
+
+exports[`BrowsersList Configuration Development Enviroment 1`] = `
+Array [
+  "last 2 Chrome versions",
+  "last 2 Safari major versions",
+  "last 2 Edge versions",
+  "last 2 Firefox versions",
+]
+`;
+
+exports[`BrowsersList Configuration Production Enviroment 1`] = `
+Array [
+  "> 1%",
+  "not IE < 11",
+]
+`;
+
+exports[`PostCSS Configuration Development Enviroment 1`] = `
+Object {
+  "plugins": Array [
+    [Function],
+    [Function],
+  ],
+}
+`;
+
+exports[`PostCSS Configuration Production Enviroment 1`] = `
+Object {
+  "plugins": Array [
+    [Function],
+    [Function],
+  ],
+}
+`;

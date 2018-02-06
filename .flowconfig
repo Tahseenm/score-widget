@@ -1,0 +1,8 @@
+[include]
+src/**
+
+[libs]
+
+[options]
+module.name_mapper='.*\(.css\)' -> 'CSSModule'
+module.system=haste

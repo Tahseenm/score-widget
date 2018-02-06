@@ -1,0 +1,25 @@
+/**
+ Brower Upgrade Prompt for old IE users
+ */
+
+.upgrade-msg {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 18px;
+  text-align: center;
+  background: #ccc;
+  color: #000;
+
+  strong {
+    color: #f03e3e;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #1b6ec2;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

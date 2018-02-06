@@ -1,0 +1,47 @@
+<!--
+  [1]. Just the polyfills the browser needs. Polyfill.io reads the User-Agent
+  header of each request and returns polyfills that are required for the
+  requesting browser. Newer browsers get the benefit of much smaller script.
+  [2]. Bundles are injected manually using HTMLWebpackPlugin lodash templating
+  because HTMLWebpackPlugin does not have a option to set custom attributes
+  (i.e. defer) on the scripts it injects.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Clearscore</title>
+  <meta name="description" content="Clearscore score widget">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.png">
+
+
+  <!-- [1]. Automatic polyfills -->
+  <script src="<%= htmlWebpackPlugin.options.polyfillIOUrl %>" defer></script>
+
+  <!-- [2]. App JS bundle -->
+  <script src="<%= _.first(htmlWebpackPlugin.files.js) %>" defer></script>
+
+  <!-- [2]. App CSS bundle -->
+  <link rel="stylesheet" href="<%= _.first(htmlWebpackPlugin.files.css) %>">
+</head>
+<body>
+  <!--[if lte IE 11]>
+    <p class="upgrade-msg">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <noscript>
+    <p class="upgrade-msg">You need to enable JavaScript to run this app.</p>
+  </noscript>
+
+
+  <!-- App -->
+  <div id="js-root"></div>
+
+</body>
+</html>

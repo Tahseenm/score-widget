@@ -1,0 +1,306 @@
+/* -------------------------------------------------------------------------- */
+/*   DOCUMENT & BODY                                                          */
+/* -------------------------------------------------------------------------- */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*   CONTENT SECTIONING                                                       */
+/* -------------------------------------------------------------------------- */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*   TEXT CONTENT                                                             */
+/* -------------------------------------------------------------------------- */
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+main {
+  display: block;
+}
+
+mark {
+  background-color: #FF0;
+  color: #000;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*   INLINE TEXT SEMANTICS                                                    */
+/* -------------------------------------------------------------------------- */
+
+a {
+  -webkit-text-decoration-skip: objects;
+  touch-action: manipulation;
+}
+
+abbr {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b {
+  font: bolder;
+}
+
+strong {
+  font: bolder;
+}
+
+code {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+kbd {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+  bottom: -0.25em;
+}
+
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*   IMAGE & MULTIMEDIA                                                       */
+/* -------------------------------------------------------------------------- */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+area {
+  touch-action: manipulation;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*    FORMS                                                                   */
+/* -------------------------------------------------------------------------- */
+
+label {
+  touch-action: manipulation;
+}
+
+button {
+  margin: 0;
+  overflow: visible;
+  font: inherit;
+  line-height: inherit;
+  text-transform: none;
+  -webkit-appearance: button;
+  touch-action: manipulation;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+[role="button"] {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+input {
+  margin: 0;
+  overflow: visible;
+  font: inherit;
+  line-height: inherit;
+  touch-action: manipulation;
+}
+
+[type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="button"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type="reset"] {
+  -webkit-appearance: button;
+}
+
+[type="reset"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="reset"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+[type="date"] {
+  -webkit-appearance: listbox;
+}
+
+[type="time"] {
+  -webkit-appearance: listbox;
+}
+
+[type="datetime-local"] {
+  -webkit-appearance: listbox;
+}
+
+[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+optgroup {
+  margin: 0;
+}
+
+select {
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+  text-transform: none;
+  touch-action: manipulation;
+}
+
+textarea {
+  margin: 0;
+  overflow: auto;
+  font: inherit;
+  line-height: inherit;
+  touch-action: manipulation;
+}
+
+fieldset {
+  min-width: 0;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*    MISC                                                                    */
+/* -------------------------------------------------------------------------- */
+
+summary {
+  display: list-item;
+  touch-action: manipulation;
+}
+
+details {
+  display: block;
+}
+
+template {
+  display: none;
+}
